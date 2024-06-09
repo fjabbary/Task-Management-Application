@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-danger px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="./index.html">Task Management</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Operations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./register.html">Register</a></li>
+              <li><a class="dropdown-item" href="./login.html">Login</a></li>
+
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section id="create-task" class="py-5 border mx-auto p-3 bg-light">
+    <div class="row">
+      <div class="col-12 col-md-6 mx-auto text-center border p-3">
+        <i class="fa-solid fa-plus text-danger fs-2" role="button" data-bs-toggle="collapse" data-bs-target="#AddForm" aria-expanded="false" aria-controls="AddForm"></i>
+        <h2 class="text-center d-inline-block ms-3">Add New Task</h2>
+      <div class="collapse mt-3" id="AddForm">
+        <div class="card card-body">
+            <form>
+              <div class="mb-3">
+                <label for="title" class="form-label">Task Title:</label>
+                <input type="email" class="form-control" id="title" placeholder="Title">
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Task Description:</label>
+                <textarea class="form-control" id="description" rows="3" placeholder="Description..."></textarea>
+              </div>
+  
+              <button type="submit" class="btn btn-primary">Add Task</button>
+            </form>
+        </div>
+      </div>
+      </div>
+    </div>
+     
+  </section>
+
+
+  <section id="tasks" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-success">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-success">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-success">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-success">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

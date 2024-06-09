@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Home Page</title>
+  <style>
+    .accordion-flush .accordion-item:last-child {
+      border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-danger px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="./index.html">Task Management</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Operations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./register.html">Register</a></li>
+              <li><a class="dropdown-item" href="./login.html">Login</a></li>
+
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section class="p-5 mb-4 bg-body-tertiary rounded-3 border-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1 class="display-5 fw-bold">Task Management</h1>
+          <p class="col-md-8 fs-4 w-100">Task management involves organizing, prioritizing, and overseeing tasks to
+            ensure
+            they are completed efficiently and on time. It encompasses the planning, tracking, and reporting of tasks,
+            often using digital tools to facilitate coordination and communication among team members.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="img-fluid"
+            src="https://storage.googleapis.com/profit-prod/wp-content/uploads/2022/07/d4eaf149-task-management.jpg"
+            alt="task management">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="mb-5">
+    <div class="container">
+      <h2 class="text-center mt-5 mb-5">Task Management Features</h2>
+      <div class="row">
+        <div class="col-12 col-md-4 mb-5">
+          <div class="card text-center bg-light mx-auto" style="max-width: 18rem;">
+            <i class="fa-solid fa-chart-line text-center pt-3 fs-1 text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title">Task Dashboard</h5>
+              <p class="card-text">Dashboard for managing tasks</p>
+              <a href="#" class="btn btn-primary">Dashboard page</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-5">
+          <div class="card text-center bg-light mx-auto" style="max-width: 18rem;">
+            <i class="fa-solid fa-list-check text-center pt-3 fs-1 text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title">Task Details</h5>
+              <p class="card-text">Detailed view for individual tasks</p>
+              <a href="#" class="btn btn-primary">Details page</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-5">
+          <div class="card text-center bg-light mx-auto" style="max-width: 18rem;">
+            <i class="fa-solid fa-circle-plus text-center pt-3 fs-1 text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title">Task Creation</h5>
+              <p class="card-text">Add new tasks</p>
+              <a href="#" class="btn btn-primary">Add task page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-4 mb-5">
+          <div class="card text-center bg-light mx-auto" style="max-width: 18rem;">
+            <i class="fa-solid fa-user-plus text-center pt-3 fs-1 text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title">Task Register</h5>
+              <p class="card-text">New users to sign up</p>
+              <a href="#" class="btn btn-primary">Register page</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-5">
+          <div class="card text-center bg-light mx-auto" style="max-width: 18rem;">
+            <i class="fa-solid fa-right-to-bracket text-center pt-3 fs-1 text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title">Task Login</h5>
+              <p class="card-text">Existed users to login</p>
+              <a href="#" class="btn btn-primary">Login page</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-5">
+          <div class="card text-center bg-light mx-auto" style="max-width: 18rem;">
+            <i class="fa-solid fa-mobile-screen text-center pt-3 fs-1 text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title">Responsive Design</h5>
+              <p class="card-text">Responsive pages</p>
+              <a href="#" class="btn btn-primary">Responsive page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="bg-light p-5">
+    <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
