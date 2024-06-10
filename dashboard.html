@@ -11,6 +11,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Dashboard</title>
+
+  <style>
+    #tasks .card {
+      transition: all 0.3s ease-in-out;
+    }
+    #tasks .card:hover {
+      transform: scale(1.1);
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 
 <body>
@@ -35,7 +45,6 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="./register.html">Register</a></li>
               <li><a class="dropdown-item" href="./login.html">Login</a></li>
-
             </ul>
           </li>
         </ul>
@@ -49,13 +58,14 @@
 
 
 
-  <section id="create-task" class="py-5 border mx-auto p-3 bg-light">
+  <section id="create-task" class="py-5 border mx-auto p-3">
     <div class="row">
-      <div class="col-12 col-md-6 mx-auto text-center border p-3">
-        <i class="fa-solid fa-plus text-danger fs-2" role="button" data-bs-toggle="collapse" data-bs-target="#AddForm" aria-expanded="false" aria-controls="AddForm"></i>
+      <div class="col-12 col-md-6 mx-auto text-center border p-3 bg-light">
+        <i class="fa-solid fa-plus text-danger fs-2" role="button" data-bs-toggle="collapse" data-bs-target="#AddForm"
+          aria-expanded="false" aria-controls="AddForm"></i>
         <h2 class="text-center d-inline-block ms-3">Add New Task</h2>
-      <div class="collapse mt-3" id="AddForm">
-        <div class="card card-body">
+        <div class="collapse mt-3" id="AddForm">
+          <div class="card card-body">
             <form>
               <div class="mb-3">
                 <label for="title" class="form-label">Task Title:</label>
@@ -65,65 +75,75 @@
                 <label for="description" class="form-label">Task Description:</label>
                 <textarea class="form-control" id="description" rows="3" placeholder="Description..."></textarea>
               </div>
-  
+
               <button type="submit" class="btn btn-primary">Add Task</button>
             </form>
+          </div>
         </div>
       </div>
-      </div>
     </div>
-     
   </section>
 
 
   <section id="tasks" class="py-5 bg-light">
     <div class="container">
+      <span class="fs-3 mb-3 d-block">
+        Number of Tasks <span class="badge text-bg-secondary">4</span>
+      </span>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-success">Edit</a>
-              <a href="#" class="btn btn-danger">Delete</a>
+          <a href="./details.html?id=1" class="text-black text-decoration-none">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Design fo Homepage Layout</h5>
+                <p class="card-text mb-3">"Create a wireframe and high-fidelity mockup for the new homepage...</p>
+                <a href="#" class="btn btn-success">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-success">Edit</a>
-              <a href="#" class="btn btn-danger">Delete</a>
+          <a href="./details.html?id=3" class="text-black text-decoration-none">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Develop API for User Authentication</h5>
+                <p class="card-text mb-3">Implement a secure user authentication API using Node.js and Express...</p>
+                <a href="#" class="btn btn-success">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-success">Edit</a>
-              <a href="#" class="btn btn-danger">Delete</a>
+          <a href="./details.html?id=3" class="text-black text-decoration-none">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Prepare Quarterly Financial Report</h5>
+                <p class="card-text mb-3">Compile and analyze the financial data for the last quarter.</p>
+                <a href="#" class="btn btn-success">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-success">Edit</a>
-              <a href="#" class="btn btn-danger">Delete</a>
+          <a href="./details.html?id=4" class="text-black text-decoration-none">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Organize Marketing Campaign</h5>
+                <p class="card-text mb-3">Plan and execute a comprehensive marketing campaign...  </p>
+                <a href="#" class="btn btn-success">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-       
+        
+
       </div>
     </div>
   </section>
